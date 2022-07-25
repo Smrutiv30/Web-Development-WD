@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Decoration</title>
+    <style>
+        body {
+            box-sizing: border-box;
+            background-color: plum;
+            background-image: url('background image.jpg') ;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 50%;
+            margin: 2px;
+            
+            
+        }
+        h1 {
+            
+            color:rgb(227, 163, 163);
+            text-align: center;
+            
+}
+        p{
+            text-align: center;
+            font-family: italic;
+            font-size: larger;
+            background-color: aquamarine;
+            color: brown;
+        }
+        nav a{
+            text-decoration: none;
+            color: azure;
+            text-align: center;
+            padding: 20px;
+            float: left;
+        }
+        nav{
+            background-color: black;
+            overflow: hidden;
+        }
+        div.scrollmenu a:hover{
+            color: blueviolet;
+        }
+        nav a:visited{
+            color: red;
+        }
+        .column{
+            float: left;
+            width: 33.%;
+            padding: 5px;
+        }
+        .row::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+        
+         
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Flower  Decoration</h1>
+        <p>Make Fresh Flowers Decoration As You mean It!</p>
+        <nav>
+            <div class="scrollmenu">
+            <a href="#">Home</a>
+            <a href="#">Event Decor</a>
+            <a href="#">Wedding Decor</a>
+            <a href="#">Birthday Decor</a>
+            <a href="#">Contact Us</a>
+        </div>
+        </nav>
+        <main>
+            <section>
+                <h2>Decoration image</h2>
+                <div class="row">
+                    <div class="column">
+                <img src ="image 3.jpg" width="360" height="300" >
+            </div>
+            <div class="column">
+                <img src ="image 1.jpg" width="360" height="300" >
+            </div>
+                <div class="column">
+                <img src ="image 2.jpg" width="360" height="300">
+            </div>
+                <div class="column">
+                <img src ="image 4.jpg" width="360" height="300">
+            </div>
+                <div class="column">
+                <img src ="image 5.jpg" width="360" height="300">
+            </div>
+                
+            </section>
+        </main>
+    </header>
+</body>
+</html>

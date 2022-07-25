@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox 2</title>
+    <style>
+        *{
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+        
+        }
+        /*call 1st and second conatiner and add properties*/
+        
+        .images,.img {
+            
+            padding: 5px;
+            display: flex;
+            font-family: sans-serif;
+            
+}
+  /*now style all images*/
+  .img1,
+  .img2,
+  .img3,
+  .img4,
+  .img5{
+    width: 100%;
+    margin: 12px;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    box-shadow: 0 4px 0 rgba(0,0,0.2, ),0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+  #box,#box1{
+    width: 100%;
+  }/*done all image styling*/
+  /*heading style*/
+        h2{
+            text-align: center;
+            color:purple;
+        }
+        /*paragraph style*/
+
+        p{
+            padding: 10px;
+        }
+        /*button styling*/
+        #btn{
+            text-align: center;
+            margin: 10px;
+        }
+        #submit{
+            padding: 10px;
+            width: 90%;
+            border: none;
+            color:black ;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #submit:hover{
+            background-color: aquamarine;
+            transition: 1s;
+        }
+        /*media responsivness*/
+
+        @media(max-width: 700px){
+            .images,.img{
+                flex-direction: column;
+                
+            }
+            .images,.img{
+                margin-right: 15px;
+            }
+
+        }
+        
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- make 1st container-->
+     <div class="images">
+        
+     <div class="img1">
+        <!--link image -->
+    <img id="box"  src="Diwali.jpeg" alt="" >
+    <!--give heading for 1st box-->
+    <h2>Diwali</h2>
+    <!--write short paragraph using p tag-->
+    <p style="color:orangered;">Diwali is India’s most important festival of the year—a time to 
+        celebrate the triumph of light over darkness, knowledge over ignorance, 
+        and good over evil. Widely observed among more than a billion people from a variety 
+        of faiths across India and its diaspora, the five days of Diwali are marked by prayer, 
+        feasts, fireworks, family gatherings, and charitable giving. For some, Diwali is also 
+        the beginning of a new year.</p>
+        <!--use button tag for read more button-->
+        <div class="btn">
+            <button id ="submit" type="button">Read more</button>
+
+        </div>
+    
+</div>
+
+<div class="img2">
+    <!--link second image-->
+    <img id="box" src="Dwarka.jpeg" alt="" >
+    <h2>Dwarka</h2> <!--heading-->
+    <!--paragraph-->
+    <p style="color: orangered;">Dwarka has commanded much attraction because the site is one of the four Dhamas (sacred place for pilgrimage) of 
+        the Hindu religion. As the legend goes, Krishna founded the city in Gujarat’s west coast.
+        The modern city of Dwarka, which in Sanskrit 
+        means ‘Gateway to heaven’, is located north-west of the state.It is also older than 
+        the Egyptian and Chinese civilisations. The city is believed to be even 
+        older than the ancient Harappan civilisation.</p>
+    <div class="btn">
+    <button id="submit" type="button">Read more</button>
+</div>
+</div>
+ <!--link second image-->
+<div class="img3">
+     <img id="box" src="Jammu and kashmir.jpeg" alt="" >
+     <h2>The real jammu and Kashmir(Heaven on Earth)</h2>
+      <!--paragraph-->
+     <p>Nature has endowed Kashmir with implausible beauty and is rightly called 
+        as "Paradise on Earth". Kashmir is resplendent with stunning Chinar trees 
+        that turn the entire valley yellow and red when the autumn arrives, silver 
+        lakes that turn golden at the crack of dawn, and crystal blue rivers that 
+        are sourced from the icy mountains.Jammu and Kashmir is not just a tourist 
+        destination but also pilgrimage to thousands of devotees belonging to all 
+        major Indian religion. The onset of summer brings Amaranth Yatris to 
+        Amaranth cave at an altitude of 3,888m, about 141 km from Srinagar.
+     </p>
+     <div class="btn">
+     <button id="submit" type="button">Read more</button>
+    </div>
+</div>
+</div>
+<!--1st container end-->
+<!--second container start-->
+<div class="img">
+
+    <!--link 4th image-->
+    <div class="img4">
+        <img id="box1" src="im-possible.jpeg" alt="" >
+        <h2>attitude towards entrepreneurship</h2>
+         <!--paragraph-->
+        <p>Entrepreneurial attitude is the degree to which an individual has a 
+            negative or positive ability to become an entrepreneur. It also has
+             predictive power about the likely entrepreneurship and future 
+             movements of an individual , and about self-employment and beliefs.
+             </p>
+             <div class="btn">
+                <button id="submit" type="button">Read more</button>
+             </div>
+             
+
+    </div>
+     <!--link 5th image-->
+    <div class="img5">
+        <img id="box1" src="Coding.jpeg" alt="" >
+        <h2>Coding</h2>
+         <!--paragraph-->
+        <p> Coding is the process of transforming ideas, solutions, and 
+            instructions into the language that the computer can understand.
+        </p>
+        <div class="btn">
+         <button id="submit" type="button">Read more</button>
+    </div>
+    </div>
+</div>
+    </div>
+    
+    
+
+
+</body>
+</html>

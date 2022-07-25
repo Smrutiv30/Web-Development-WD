@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        /*Now call first box and add properites to dispaly flex*/
+        .box1{
+            display: flex;
+        }
+
+        .box1 div{
+        
+            background-color:aqua;
+            padding: 15px;
+            color:orange;
+            border-radius: 5px;
+            flex-grow: 1;
+            font-size: larger;
+            margin: 4px;
+            font-family: italic;
+        }
+        /*call each row and inside div class as well*/
+        div.r1{
+            display:flex;
+            padding: 0px;
+            
+        }
+        .r1 div{
+            flex-grow: 1;
+            background-color: rebeccapurple;
+        }
+
+
+        div.r2{
+            display: flex;
+            padding: 0px;
+        }
+        .r2 div{
+            flex-grow: 1;
+            background-color: rebeccapurple;
+
+        }
+        div.r3{
+            display: flex;
+            padding: 0px;
+        }
+        .r3 div{
+            display: flex;
+            background-color: rebeccapurple;
+        }
+        /*now call and add the properties for 2row box*/
+       
+        .box2{
+            display: flex;
+        }
+        
+        .box2 div{
+            color: blueviolet;
+            padding: 10px;
+            font-size: larger;
+            flex-grow: 3;
+            margin: 4px;
+            border-radius: 6px;
+            background-color: aqua;
+            font-family: italic;
+
+        }
+        /*now call and add the properties for 3rd row box*/
+        .box3{
+            display: flex;
+        }
+        .box3 div{
+            color: blueviolet;
+            padding: 10px;
+            font-size: larger;
+            flex-grow: 3;
+            margin: 4px;
+            border-radius: 6px;
+            background-color: aqua;
+            font-family: italic;
+
+        }
+
+    </style>
+</head>
+<body>
+    <!-- This is flexbox challenge 1-->
+    <!-- For each  box make div class and name accordingly-->
+    <!-- first i wiil make 3 container using div section -->
+    <div class="box1"">
+        <!--make nested row inside first box-->
+        <!--MAke first row box-->
+        
+        <div>1
+            <!--first row with 3 box-->
+            <div class="r1">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+             <!--second row inside 1 box-->
+                <div class="r2">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                </div>
+                    <!--3rd row with 5 box-->
+                    <div class="r3">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                    </div>
+                </div>
+                <!--make 2 and 3 box in 1st row-->
+                <div>2</div>
+                <div>3</div>
+            </div>
+            <!-- This will make another 4 box in 2 row-->
+            <div class ="box2">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+            </div>
+            <!--This will make another 5 box in 3rd row-->
+            <div class="box3">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+            </div>
+       
+    
+</body>
+</html>

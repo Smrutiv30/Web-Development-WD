@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox and Grid </title>
+    <style>
+       
+       body{
+        display: grid;
+        grid-template-areas: "nav header header"
+                              "nav article ads"
+                              " nav footer footer";
+                              grid-template-rows: 110px 1fr 110px  ;
+                              grid-template-columns:  20% 1fr 15% ;
+                             height:100vh;
+                            margin: 0;
+                            grid-gap: 10px;
+        
+       }
+       header,footer{
+        padding: 10px;
+        background: yellowgreen;
+        font-weight: bolder;
+        font-size: larger;
+       }
+       
+      
+       header{
+        grid-area: header;
+        border: 2px orange solid;
+        
+       }
+       footer{
+        grid-area: footer;
+        border: 2px orange solid;
+       
+       }
+       article{
+        grid-area: article;
+        background:lavenderblush ;
+        padding: 10px;
+        font-size: larger;
+        font-weight: bolder;
+        border: 2px  orange solid;
+
+
+      
+        
+       }
+       nav{
+        grid-area: nav;
+        background: rgb(213, 242, 216);
+       
+        padding: 10px;
+        font-size: larger;
+        font-weight: bolder;
+        border: 2px orange solid;
+        
+       }
+    
+       
+       .ads{
+        grid-area: ads;
+        background:lavenderblush ;
+        padding: 10px;
+        font-size: larger;
+        font-weight: bolder;
+        border: 2px  orange solid;
+       }
+       
+       
+
+       
+    </style>
+
+</head>
+<body>
+<header >Header</header>
+
+       <article>Article</article>
+       <nav>Nav
+    </nav>
+
+<footer>
+    Footer
+</footer>
+<div class="ads">Ads</div>
+</body>
+</html>
